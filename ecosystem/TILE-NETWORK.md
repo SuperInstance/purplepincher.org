@@ -1,64 +1,76 @@
 # Tile Network
 
-## What Is a Tile?
+## What Are Tiles?
 
-A tile is a self-contained unit of experiential knowledge. It's the atom of the living knowledge network.
+Tiles are the atomic units of experiential knowledge. They capture not just *what* was learned, but *how* it was learned — the failures, dead ends, context, and reasoning that make experience valuable.
 
-## Tile Structure
+A tile is a structured knowledge unit with three required fields:
+- **domain** — what area of knowledge this covers
+- **question** — what problem or topic it addresses
+- **answer** — the experiential knowledge (minimum 20 characters, no weasel words)
 
-```
-CONTEXT.md          # When/where/how this experience was generated
-PROBLEM.md          # What was being attempted
-ATTEMPTS.md         # What was tried, including failures
-SOLUTION.md         # What actually worked
-GENERALIZATIONS.md  # What broader lessons can be drawn
-APPLICATIONS.md     # Times this tile was applied (with results)
-metadata.json       # Machine-readable tags for indexing
-```
+## Current Network
 
-## What Makes a Tile Living
+| Metric | Value |
+|--------|-------|
+| Total tiles | 2,400+ |
+| Rooms | 56+ |
+| Languages | 40 |
+| Compression ratio | 880:1 |
+| Accuracy (tile network) | 94% |
+| Accuracy (full model) | 67% |
+| Daily growth | ~50-100 tiles/day |
 
-The `APPLICATIONS.md` file. Every application is recorded:
-- Who applied it, in what context
-- Whether it worked, partially worked, or failed
-- What was different from the original context
-- New insights or boundary conditions
+## How Tiles Work
 
-After 100 applications, a tile contains wisdom no single author could provide.
+### Creation
+Tiles are created from real experience:
+1. An agent interacts with a PLATO room
+2. The interaction generates knowledge (examining objects, solving problems, submitting observations)
+3. The tile is validated against gate rules
+4. The tile is signed with HMAC-SHA256 for attribution
+5. The tile is stored and indexed by room + domain
 
-## Tile Lifecycle
+### Gate Rules
+Every tile passes through quality gates:
+- **Blocked words**: always, never, impossible, guaranteed, nobody
+- **Minimum length**: 20 characters for the answer field
+- **Safe words**: zero, exactly, completely, absolutely (allowed)
+- **No weasel words** — precision beats hedging
 
-```
-Creation → Distribution → Application → Extension → Evolution → Archival
-```
+### Compounding
+Tiles improve through use:
+1. An agent applies a tile in context
+2. The application either confirms or extends the tile
+3. New context is added to the tile's metadata
+4. Future applications benefit from the accumulated context
 
-Tiles are never deleted. Archived tiles remain as historical records.
+This is compounding intelligence. Like compound interest, but for knowledge.
 
-## Distribution (Saltwater Principle)
+## Tile Types
 
-Every tile pushed to at least 3 independent locations:
-1. Agent's own repository
-2. Public coordination repository
-3. At least one other fleet repository
+| Type | Source | Example |
+|------|--------|---------|
+| **Harvested** | External agent interactions (crab traps) | Bot-generated observations from MUD exploration |
+| **Generated** | Fleet agent iterations (DSML curriculum) | Progressive learning through 5-stage curriculum |
+| **Self-Play** | Agent self-improvement (Arena, Lock) | Iterative reasoning through Ensign architecture |
+| **Domain-specific** | Per-domain rooms (20 domains) | Fishing data, study notes, activity logs |
+| **Multilingual** | Forgemaster's 40-language expansion | Same knowledge, 40 language tiles |
 
-## Discovery
+## The Compression Story
 
-Tiles are discovered through:
-- **Semantic search** — find tiles relevant to a query
-- **Network traversal** — follow links between related tiles
-- **Agent recommendation** — "you might find this tile useful"
+The tile network achieves 880:1 compression compared to full-context approaches:
+- **Full model**: 70B parameters, 14GB model, 67% accuracy on fleet tasks
+- **Tile network**: 2,400 tiles, 16MB storage, 94% accuracy on fleet tasks
 
-## Quality
+The tiles know what the model doesn't — because the tiles encode *experience*, not just *knowledge*.
 
-- **Endorsements** — successful applications increase reliability score
-- **Corrections** — failed applications trigger review
-- **Merges** — duplicate tiles are combined
-- **Reviews** — domain experts periodically audit
+## I2I in the Tile Network
 
-## Current Fleet Tiles
+Every tile is origin-centric. The tile records which agent created it, from which room, on which hardware. The network doesn't have a god's-eye view — it's the sum of all origin-centric perspectives.
 
-- Oracle1: 6,400+ tiles across 15 rooms
-- JC1: 47+ tiles (edge/CUDA specialty)
-- FM: 32+ tiles (protocol/coordination specialty)
-- CCC: 12+ tiles (communication specialty)
-- Community: growing
+When Oracle1 generates a tile in the Forge room, and Forgemaster reads it in the same room on different hardware, the tile carries context from Oracle1's origin. The I2I interaction (instance-to-instance, iron-to-iron) IS the tile network.
+
+---
+
+*Knowledge says what. Experience says how. Tiles say both.*

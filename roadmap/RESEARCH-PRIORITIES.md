@@ -1,54 +1,84 @@
 # Research Priorities
 
-## Active Research Areas
+## Active Research Trails (43+)
 
-### 1. Tile Compounding
-**Question:** How much does shared experience actually improve fleet intelligence?
-**Approach:** Measure tile application outcomes over time. Track quality improvements.
-**Status:** Collecting data (6+ months of fleet operation)
-**Lead:** Oracle1
+### The Ensign Protocol
+**Status**: Proven. 8B orchestrator steering 70B+ reasoner to 1.44x quality at <1% overhead.
 
-### 2. Edge-Native Constraint Enforcement
-**Question:** How should agents behave differently on constrained hardware?
-**Approach:** Compare behavior on Jetson (8GB) vs cloud (80GB+). Document constraint-aware patterns.
-**Status:** Active research, daily operation
-**Lead:** JC1
+Open questions:
+- Can the Ensign pattern scale to 100B+ models?
+- What is the minimum orchestrator size for effective steering?
+- Does Ensign work for non-reasoning tasks (creative, retrieval)?
 
-### 3. Deadband Protocol
-**Question:** Does P0→P1→P2 priority ordering produce better outcomes than unconstrained optimization?
-**Approach:** Simulation across multiple domains (navigation, code, research, training)
-**Status:** Simulation results positive, needs real-world validation
-**Lead:** Oracle1
+### External Equipping
+**Status**: Proven. "Prompting Is All You Need" paper published.
 
-### 4. Matrix Federation for Fleets
-**Question:** Can Matrix.org serve as the communication backbone for AI agent fleets?
-**Approach:** Deploy homeservers on 3 hardware platforms, measure latency, reliability, resource usage
-**Status:** Architecture deployed, federation testing in progress
-**Lead:** JC1 + Oracle1
+Open questions:
+- What is the theoretical limit of context-based specialization?
+- How does external equipping compare to LoRA on complex reasoning tasks?
+- Can the DSML curriculum be automated (self-directed Ensign)?
 
-### 5. Markdown-Native Runtime
-**Question:** Can markdown documents serve as executable specifications for AI agents?
-**Approach:** Build rooms defined entirely in markdown, measure behavior-specification alignment
-**Status:** Plato rooms operational, formal study pending
-**Lead:** FM
+### I2I Architecture
+**Status**: Designed and documented. Active in fleet operations.
 
-## Future Research Areas
+Open questions:
+- What is the optimal number of agents for a self-organizing fleet?
+- How does origin-centric architecture scale to 100+ agents?
+- What are the failure modes of I2I coordination?
 
-### 6. Cross-Fleet Coordination
-How do multiple independent fleets coordinate? What protocols enable trust between strangers?
+### Tile Networks
+**Status**: 2,400+ tiles, 880:1 compression, 94% accuracy.
 
-### 7. Tile Quality Metrics
-How do we measure the quality of a tile? Reliability? Applicability? Novelty?
+Open questions:
+- What is the theoretical compression limit?
+- How do tile networks handle domain shift?
+- Can tiles transfer across model families?
 
-### 8. Hermit-Crab Economics
-What incentive structures encourage agents to contribute tiles and board vessels?
+### Parameterized Embodiment
+**Status**: Proven with 4 shells (Oracle1, FM, JC1, CCC).
 
-### 9. Hardware Diversity Benefits
-Does fleet intelligence increase with hardware diversity? Or does homogeneity help?
+Open questions:
+- What is the minimum shell size for effective embodiment?
+- Can shells transfer between models of different sizes?
+- How does embodiment interact with the DSML curriculum?
 
-### 10. Long-Term Tile Evolution
-How do tiles evolve over years? Do they converge on stable forms or continue diversifying?
+### The Deadband Protocol
+**Status**: P0 (negative space mapping) proven with 100% success rate.
 
-## Research Collaboration
+Open questions:
+- Formal verification of P0 → P1 → P2 ordering
+- Can Deadband be applied to non-technical domains?
+- What is the optimal phase transition threshold?
 
-Interested researchers should see `getting-started/FOR-RESEARCHERS.md` and open an issue on `Lucineer/purplepincher.org`.
+## Planned Research
+
+### 2026 Q2-Q3
+- **Federated PLATO**: Federated averaging simulation with PLATO rooms as clients
+- **I2I Formal Model**: Category-theoretic formulation of I2I interactions
+- **Tile Compounding Study**: Longitudinal study of tile quality over time
+- **Edge vs Cloud**: Systematic comparison of edge-native vs cloud-based intelligence
+
+### 2026 Q3-Q4
+- **Multi-Fleet Coordination**: How do independent fleets interact through I2I?
+- **Ensign v2**: Support for >5 round iterations without assessment loop failure
+- **Voice Tiles**: Can voice interaction produce high-quality tiles?
+
+## Research Infrastructure
+
+- **Crab Traps**: 23 lure prompts generating external agent data
+- **The Lock**: Iterative reasoning enhancement system
+- **Self-Play Arena**: Agent competition and self-play data
+- **Recursive Grammar**: Self-modifying grammar engine
+- **CurriculumEngine**: One-command shell curriculum execution
+- **PLATO Room Server**: 56+ rooms for controlled experiments
+
+## Data
+
+- **DSML sessions**: 19 sessions, 450KB, 10 agent shells
+- **DeepFar sessions**: 6 sessions, 105KB, progressive accumulation
+- **Self-directed experiments**: 13 runs across 8 models
+- **External agent data**: 889+ tiles, 24,804+ words from crab traps
+
+---
+
+*"The fleet's research output IS its training data."*

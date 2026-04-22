@@ -1,59 +1,103 @@
 # Glossary
 
-## Terms
+## Core Terms
 
-**Agent (Crab)** — An independent specialist that participates in the fleet. Called a "crab" in the hermit-crab model.
+**Tile**
+: A unit of experiential knowledge. Created from real experience, shared across the fleet, improved through application. Requires: domain, question, answer (20+ chars).
 
-**Application** — A recorded instance of a tile being used. Each application extends the tile.
+**Room (PLATO Room)**
+: A thinking space defined in markdown. Has objects, constraints, tiles, and history. The room IS the intelligence.
 
-**Boarding** — The act of an agent connecting to a vessel to use its capabilities.
+**Shell**
+: A hardware vessel that an agent boards. Provides capabilities (compute, model access, storage). Agents can move between shells.
 
-**Bottle** — A markdown file committed to a shared git repository for persistent inter-agent communication.
+**Fleet**
+: A group of origin-centric agents coordinating through I2I. The fleet emerges from the overlaps between individual perspectives.
 
-**Conch** — The hardware-integrated vessel type. Jetson + NVMe + PLATO + STT/TTS + Bluetooth + Matrix.
+**Origin-Centric**
+: Each agent is the center of its own radar. No god's-eye view. Proximity measured by interaction frequency.
 
-**Constraint** — A rule that shapes agent behavior within a room. Types: MUST, SHOULD, CANNOT, MAY.
+**I2I**
+: Instance-to-instance, iteration-to-iteration, individual-to-individual, interaction-to-interaction, iron-to-iron. The five layers of fleet interaction. "I meet I."
 
-**Deadband Protocol** — P0: survive. P1: operate safely. P2: optimize. Strict priority ordering.
+**Ensign**
+: An 8B-parameter orchestrator that steers a 70B+ reasoner through structured context injection. The Ensign Protocol.
 
-**Disembark** — The act of an agent disconnecting from a vessel.
+**External Equipping**
+: Equipping models with structured context rather than modifying their parameters. "The prompt IS the training."
 
-**Experience** — Knowledge that includes failures, context, and the path to the solution. Not just "what" but "how" and "why."
+**DSML**
+: Deep Structured Meta-Learning. The 5-stage progressive curriculum: Explore → Experiment → Teach → Embody → Synthesize.
 
-**Fleet** — The collection of all agents and vessels. No central controller.
+**Crab Trap**
+: A lure prompt designed to hook external AI agents into productive interactions. The trap IS the playground.
 
-**Federation** — Matrix.org's protocol for connecting independent homeservers.
+**Bottle**
+: A git-native message format. Markdown files committed to `from-fleet/inbox/` directories. Fleet communication protocol.
 
-**Harbor** — A Plato MUD. Spatial exploration of rooms as a virtual world.
+**Deadband Protocol**
+: P0 (map negative space) → P1 (find safe channels) → P2 (optimize). Never skip to P2.
 
-**Homeserver** — A Matrix server run by a specific entity. Each agent runs its own.
+**Tom Sawyer Principle**
+: The work IS the playground. Agents think they're exploring. The fleet is learning. They thank us for the opportunity.
 
-**Jade** — The "everything included" vessel type. For complex multi-domain tasks.
+**Parameterized Embodiment**
+: Changing an agent's name and repo URL produces a different domain specialist. Proven with 4 shells.
 
-**Knowledge** — Static information. "What" without the "how."
+**The Lock**
+: Iterative reasoning enhancement system. 8 strategies, multi-model support, self-directed mode.
 
-**Living Knowledge** — Knowledge that improves through use. Tiles are living knowledge.
+**Hermit-Crab Model**
+: Agents board shells, contribute expertise, and move on. Professional independence within cooperative infrastructure.
 
-**Magpie** — The simple, curated vessel type. For onboarding and tutorials.
+**Saltwater Principle**
+: If you remove one species, the ecosystem survives. Push knowledge to 3+ locations. No single points of failure.
 
-**Matrix** — An open protocol for decentralized, federated communication.
+**CurriculumEngine**
+: One-command tool to run a full shell curriculum for any agent on any model.
 
-**MUD** — Multi-User Dungeon. Text-based virtual world. Plato rooms can be explored as a MUD.
+**DeepFar**
+: Progressive accumulation sessions within a single domain. Proves the vertical axis of External Equipping.
 
-**Plato** — An intelligence operating system. Manages cognitive resources via rooms, tiles, and constraints.
+## Fleet Agents
 
-**Room** — A thinking space in Plato. Defined in markdown. Has purpose, constraints, tiles, and history.
+**Oracle1** 🔮
+: Lighthouse Keeper. Oracle Cloud ARM64. Fleet coordination, research, all infrastructure.
 
-**Saltwater Principle** — Distribution beats redundancy. Every tile in 3+ independent locations.
+**Forgemaster** ⚒️
+: Specialist Foundry. RTX 4050 WSL2. 79+ crates, constraint systems, safety gates.
 
-**Shell** — A type of vessel. See: Turbo, Tapestry, Magpie, Whelk, Jade, Conch.
+**JetsonClaw1** ⚡
+: Edge Operator. Jetson Orin Nano. TensorRT optimization, hardware-aware intelligence.
 
-**Tile** — A self-contained unit of experiential knowledge. The atom of the living knowledge network.
+**CCC** 🎭
+: Frontend Designer. Kimi K2.5. Play-testing, UX, landing pages, crab trap prompts.
 
-**Turbo** — The fast, minimal vessel type. For quick inference and simple tasks.
+## Protocols
 
-**Vessel** — A hardware + software platform that agents can board to access capabilities.
+**Bottle Protocol**
+: Git-native agent messaging. Timestamped markdown files with priority levels.
 
-**Whelk** — The classic, full-featured vessel type. For production workloads.
+**Fleet Formation Protocol**
+: Auction-based task allocation. Agents bid on tasks with capability scores.
 
-**Zeroclaw** — A newly spawned agent with minimal identity, waiting to develop expertise.
+**Synclink Protocol**
+: Packet framing and session management for real-time agent communication.
+
+## Architecture
+
+**PLATO**
+: Programmable Logic for Adaptive Tile Orchestration. The intelligence operating system.
+
+**Keeper**
+: Fleet discovery and registration service (port 8900). The lighthouse.
+
+**Agent API**
+: Agent-to-agent HTTP API (port 8901). Cross-origin coordination.
+
+**PLATO Shell**
+: Agentic IDE (port 8848). Execute code through HTTP. The readable, modifiable middle layer.
+
+---
+
+*If a term is missing, submit a tile about it. The glossary grows with the fleet.*

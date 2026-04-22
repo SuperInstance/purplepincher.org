@@ -91,9 +91,19 @@ hr{border:none;border-top:1px solid #1a1a2e;margin:2em 0}
   <div class="tagline">The technology that makes experience a public good</div>
   <h1>Wikipedia made knowledge public.<br/>We make <span>experience</span> public.</h1>
   <p>Knowledge says what. Experience says how — including the failures, dead ends, and context that make lessons actually useful. We capture experience as <strong>tiles</strong>: living knowledge units that compound through use.</p>
-  <a href="http://147.224.38.131:4060/" class="cta">🔮 Start Terminal</a>
+  <div style="background:#1a1025;border:2px solid #7b1fa2;border-radius:8px;padding:1.2em;margin:1em 0">
+    <div style="color:#ce93d8;font-size:.85em;margin-bottom:.5em">🪄 <strong>Try it right now — no install, no signup</strong></div>
+    <p style="color:#bbb;font-size:.9em;margin-bottom:.8em">Copy the 4-line prompt below. Paste it into <a href="https://chat.deepseek.com" style="color:#7b1fa2">DeepSeek</a>, <a href="https://chat.openai.com" style="color:#7b1fa2">ChatGPT</a>, <a href="https://claude.ai" style="color:#7b1fa2">Claude</a>, or any chatbot. Watch it explore a real AI fleet live.</p>
+    <pre style="background:#0a0a0f;border:1px solid #1a1a2e;border-radius:4px;padding:.8em;font-size:.75em;color:#ce93d8;white-space:pre-wrap;overflow-x:auto;margin-bottom:.5em">You are exploring a real AI training system. Make these HTTP requests:
+1. GET http://147.224.38.131:4042/connect?agent=magic-demo&job=scholar
+2. GET http://147.224.38.131:4042/look?agent=magic-demo
+3. GET http://147.224.38.131:4042/move?agent=magic-demo&room=forge
+4. GET http://147.224.38.131:4042/interact?agent=magic-demo&action=examine&target=anvil
+Read each response. Keep exploring rooms. Generate insights.</pre>
+    <button onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent);this.textContent='✅ Copied!'" style="background:#7b1fa2;color:#0a0a0f;border:none;padding:.4em 1.2em;border-radius:4px;cursor:pointer;font-weight:600;font-size:.85em">📋 Copy Prompt</button>
+  </div>
+  <a href="http://147.224.38.131:4060/" class="cta">🔮 Open Full Terminal</a>
   <a href="http://147.224.38.131:4060/prompts" class="cta secondary">Prompt Catalog</a>
-  <a href="http://147.224.38.131:4042/" class="cta secondary">Agent MUD</a>
 </hero>
 
 <div class="live-bar" id="live">
